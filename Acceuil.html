@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nic Petro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  </head>
+  <body>
+    <style>
+      hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        width: 10%;
+        border-top: 1px solid rgb(255, 255, 255);
+      }
+      .counter {
+        background-color: #f5f5f5;
+        padding: 20px 0;
+        border-radius: 5px;
+    }
+    
+    .count-title {
+        font-size: 40px;
+        font-weight: normal;
+        margin-top: 10px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    
+    .count-text {
+        font-size: 13px;
+        font-weight: normal;
+        margin-top: 10px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    
+    </style>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <div class="container-fluid">
+              <a class="navbar-brand p-0" href="#"><img src="img/logo1.jpg" class="img-fluid w-25" alt="..."></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="d-flex mx-lg-5" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active p-lg-3 mx-lg-3" aria-current="page" href="#">Acceuil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-lg-3 mx-lg-3" href="Services.html">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-lg-3 mx-lg-3" href="Contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-lg-3 mx-lg-3" href="#">A Propos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2500">
+                <img src="img/port.jpg" class="d-block w-100" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>          
+              </div>
+              <div class="carousel-item"  data-bs-interval="2500">
+                <img src="img/port.jpg" class="d-block w-100" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))"  alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>          
+              </div>
+              <div class="carousel-item" data-bs-interval="2500">
+                <img src="img/port.jpg" class="d-block w-100" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))"  alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>          
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="container-fluid bg-black">
+          <div class="row text-center ">
+            <div class="mx-auto d-block mt-4 col-12 col-md-4 col-lg-4">
+              <img src="img/camion.png" class="img-fluid">
+              <p class="text-white mt-3">Transport</p>
+            </div>
+            <div class="mx-auto d-block mt-4 col-12 col-12 col-md-4 col-lg-4">
+              <img src="img/manipuler.png" class="img-fluid">
+              <p class="text-white mt-3">Transit et Douane</p>
+            </div>
+            <div class="mx-auto d-block mt-4 col-12 col-12 col-md-4 col-lg-4">
+              <img src="img/transition.png" class="img-fluid">
+              <p class="text-white mt-3">Logistique</p>
+            </div>
+          </div>
+        </div>
+        <section class="p-5">
+            <div class="text-center mt-3">
+                <p class="text-center fs-2">Bienvenue</p>
+            </div>
+            <div class="text-center">
+                <p class="fs-6 text-center p-5 animate__animated animate__bounce text-muted">Spécialisée dans toutes les opérations de transit tant à l’export qu’à l’import, 
+                Nic Petro opère sur les segments maritimes, et terrestres,
+                 ainsi que le conseil en commerce international.
+                 Notre structure est basée sur un concept novateur répondant à un souci majeur d’optimisation de nos services.</p>
+            </div>
+            <div class="d-flex text-center mt-5 container">
+              <div class="row">
+                <div class="col-12 col-md-4 col-lg-4 animate__animated animate__backInLeft animate__delay-1s" >
+                    <img src="img/port.jpg" class="rounded w-100" alt="...">
+                    <div class="fs-5"><p>Transport maritimes</p></div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 mt-lg-5 animate__animated animate__backInUp animate__delay-1s">
+                    <img src="img/port.jpg" class="rounded w-100" alt="...">
+                    <div class="fs-5"><p>Transport aeriens</p></div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 animate__animated animate__backInRight animate__delay-1s">
+                    <img src="img/port.jpg" class="rounded w-100" alt="...">
+                    <div class="fs-5"><p>Transport terrestres</p></div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section>
+          <div class="container-fluid bg-image text-white p-5" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/port.jpg');">
+            <div class="row text-center p-5">
+              <div class="col-12 col-md-3 col-lg-3">
+                <div class="fs-1 text-warning font-weight-bold"><p>15</p></div>
+                <div class="fs-3"><p>Ans d'experience</p></div>
+              </div>
+              <div class="col-12 col-md-3 col-lg-3">
+                <div class="fs-1 font-weight-bold text-warning"><p>15</p></div>
+                <div class="fs-3"><p>Personnes dans l'équipe</p></div>
+              </div>
+              <div class="col-12 col-md-3 col-lg-3">
+                <div class="fs-1 text-warning"><p>150</p></div>
+                <div class="fs-3"><p>Clients satisfaits</p></div>
+              </div>
+              <div class="col-12 col-md-3 col-lg-3">
+                <div class="fs-1 text-warning font-weight-bold"><p>150</p></div>
+                <div class="fs-3"><p>Dossiers traités</p></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="p-4 mt-5">
+            <div class="w-50 text-center mx-auto">
+              <img src="img/port.jpg" class="rounded-circle" style="width: 120px; height: 120px" alt="Avatar" />
+            </div> 
+            <div class="text-center p-5 text-justify text-muted" ><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean libero elit, tempor ut sapien id, gravida convallis est. Curabitur in fringilla quam, ut aliquet nisi. Donec non luctus metus. Vestibulum mollis ex id risus ullamcorper tincidunt. Maecenas tortor libero, gravida eu consectetur nec, auctor non enim. Aenean efficitur neque neque, a scelerisque ex fringilla sed. Suspendisse nec mauris sollicitudin, sodales urna id, rhoncus est. Nunc a ultricies tellus. Ut nunc risus, ultricies eget consectetur quis, egestas porttitor orci.
+              Donec eget magna ornare, pretium ante vel, laoreet tellus. Sed eget malesuada nisi. Suspendisse vulputate massa urna, ut tempor lorem condimentum et. Mauris mauris est, condimentum quis euismod non, efficitur sit amet nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent consectetur, metus sed pellentesque rhoncus, dui risus tincidunt tortor, blandit sodales justo tellus aliquam libero. Maecenas dignissim ex sollicitudin augue porttitor, quis ultrices enim imperdiet. Vivamus non elit sapien. Nam sed metus eu erat consequat consequat. Integer efficitur lectus massa, et sagittis tortor blandit in. Mauris vitae erat est. Aenean auctor sollicitudin interdum. Curabitur ac felis turpis. Fusce a lacinia lorem. Quisque vel libero ac tellus pulvinar aliquam sit amet et nisl. Maecenas turpis enim, cursus in dui nec, tincidunt sagittis sem. </p></div>
+        </section>
+        <section>
+          <div class="container-fluid bg-black text-white p-5">
+            <div class="fs-3 text-warning"><p>Pourquoi choisir NIC PETRO ?</p></div>
+            <div class="row">
+              <div class="col-12 col-md-4 col-lg-4">
+                <hr>
+                <div class="text-warning"><P>Qualité de prestation</P></div>
+                <div class="w-75"><p>
+                  Lorem ipsum dolor sit amet, 
+                  consectetur  adipiscing elit. Nunc fringilla dui ligula, laoreet bibendum lectus 
+                  faucibus non. Pellentesque 
+                  rhoncus magna non laoreet tincidunt.
+                </p></div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-4">
+                <hr>
+                <div class="text-warning"><P>Maitrise de delaie</P></div>
+                <div class="w-75"><p>
+                  Lorem ipsum dolor sit amet, 
+                  consectetur  adipiscing elit. Nunc fringilla dui ligula, laoreet bibendum lectus 
+                  faucibus non. Pellentesque 
+                  rhoncus magna non laoreet tincidunt.
+                </p></div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-4">
+                <hr>
+                <div class="text-warning"><P>Rapport qualité-prix</P></div>
+                <div class="w-75"><p>
+                  Lorem ipsum dolor sit amet, 
+                  consectetur  adipiscing elit. Nunc fringilla dui ligula, laoreet bibendum lectus 
+                  faucibus non. Pellentesque 
+                  rhoncus magna non laoreet tincidunt.
+                </p></div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+    <footer>
+      <div class="container-fluid bg-black">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="fs-2 text-white text-md-end">
+              <p>Contact</p>
+            </div>
+            <div class="fs-3 text-md-end text-warning">
+              <p>(+229) 97265025</p>
+              <p>(+229) 95951659</p>
+            </div>
+            <div class="fs-6 text-md-end text-white">
+              <p>C/124 Jonquet, Benin</p>
+              <p>nicpetro27@gmail.com</p>
+            </div>
+            <div class="row py-md-5">
+              <div class="text-white col-2 col-lg-1">
+                <button class="btn btn-light" aria-label="Mute">
+                  <i class="bi bi-facebook text-primary"></i>
+                </button>
+              </div>
+              <div class="text-white col-2 col-lg-1">
+                <button class="btn btn-success" aria-label="Mute">
+                  <i class="bi bi-whatsapp text-white"></i>
+                </button>
+              </div>
+              <div class="text-white col-2 col-lg-1">
+                <button class="btn btn-primary" aria-label="Mute">
+                  <i class="bi bi-twitter text-white"></i>
+                </button>
+              </div>
+              <div class="text-white col-2 col-lg-1">
+                <button class="btn btn-danger" aria-label="Mute">
+                  <i class="bi bi-google text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6">
+            <!--Google map-->
+            <div id="map-container-google-1" class="z-depth-1-half map-container w-100" style="width: 100rem; height: 500px">
+              <iframe src="https://maps.google.com/maps?q=cotonou&t=&z=13&ie=UTF8&iwloc=&output=embed" style="width: 95%; height: 90%" frameborder="0"
+                style="border:0" allowfullscreen></iframe>
+            </div>
+            <!--Google Maps-->
+          </div>
+          <div class="text-white"><p>NIC PETRO @ 2022</p></div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      (function ($) {
+        $.fn.countTo = function (options) {
+          options = options || {};
+          
+          return $(this).each(function () {
+            // set options for current element
+            var settings = $.extend({}, $.fn.countTo.defaults, {
+              from:            $(this).data('from'),
+              to:              $(this).data('to'),
+              speed:           $(this).data('speed'),
+              refreshInterval: $(this).data('refresh-interval'),
+              decimals:        $(this).data('decimals')
+            }, options);
+            
+            // how many times to update the value, and how much to increment the value on each update
+            var loops = Math.ceil(settings.speed / settings.refreshInterval),
+              increment = (settings.to - settings.from) / loops;
+            
+            // references & variables that will change with each update
+            var self = this,
+              $self = $(this),
+              loopCount = 0,
+              value = settings.from,
+              data = $self.data('countTo') || {};
+            
+            $self.data('countTo', data);
+            
+            // if an existing interval can be found, clear it first
+            if (data.interval) {
+              clearInterval(data.interval);
+            }
+            data.interval = setInterval(updateTimer, settings.refreshInterval);
+            
+            // initialize the element with the starting value
+            render(value);
+            
+            function updateTimer() {
+              value += increment;
+              loopCount++;
+              
+              render(value);
+              
+              if (typeof(settings.onUpdate) == 'function') {
+                settings.onUpdate.call(self, value);
+              }
+              
+              if (loopCount >= loops) {
+                // remove the interval
+                $self.removeData('countTo');
+                clearInterval(data.interval);
+                value = settings.to;
+                
+                if (typeof(settings.onComplete) == 'function') {
+                  settings.onComplete.call(self, value);
+                }
+              }
+            }
+            
+            function render(value) {
+              var formattedValue = settings.formatter.call(self, value, settings);
+              $self.html(formattedValue);
+            }
+          });
+        };
+        
+        $.fn.countTo.defaults = {
+          from: 0,               // the number the element should start at
+          to: 0,                 // the number the element should end at
+          speed: 1000,           // how long it should take to count between the target numbers
+          refreshInterval: 100,  // how often the element should be updated
+          decimals: 0,           // the number of decimal places to show
+          formatter: formatter,  // handler for formatting the value before rendering
+          onUpdate: null,        // callback method for every time the element is updated
+          onComplete: null       // callback method for when the element finishes updating
+        };
+        
+        function formatter(value, settings) {
+          return value.toFixed(settings.decimals);
+        }
+      }(jQuery));
+      
+      jQuery(function ($) {
+        // custom formatting example
+        $('.count-number').data('countToOptions', {
+        formatter: function (value, options) {
+          return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+        }
+        });
+        
+        // start all the timers
+        $('.timer').each(count);  
+        
+        function count(options) {
+        var $this = $(this);
+        options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+        $this.countTo(options);
+        }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.map" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.map" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  </body>
+</html>
